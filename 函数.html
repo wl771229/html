@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    var a = 1
+    function fun(n) {
+
+        if (n <= 1) {
+            return 1
+        } else {
+            a = n * fun(n - 1)
+            console.log(n, a)
+
+
+
+            return a
+        }
+
+
+    }
+
+// 有人给了你一把钥匙  ， 叫你去房间里面拿东西 ， 当你用钥匙打开这扇门的时候  ， 你发现里面还有一扇门 ， 你又打开了这扇门，一直到最后  ， 你发现里面就
+// 一个房间 , 你拿了东西 , 然后按照来时的路回去 , 当你出去的时候  , 别人问你你打开了多少扇门 , 这就是最后的答案
+// 所以最开始  :
+
+
+// n = 5
+// n = 4
+// n = 3
+// n = 2
+// n = 1
+
+
+// 然后我们开始回去了  
+// 这个时候    n = 1, a = 1   return   1
+// 这个时候    n = 2, a = 2   return   2
+// 这个时候    n = 3, a = 6   return   6
+// 这个时候    n = 4, a = 24   return   24
+// 这个时候    n = 5, a = 120   return   120
+          
+
+
+
+
+
+    console.log(fun(5))
+
+    // 递归确实就像解决问题一样  ， 我们想解决一个问题  ，然后就要去解决里面更多的小问题 ， 
+    // 小问题里面还有更多的问题  ， 一直解决  ， 最后所有的小问题里面的小问题解决了 ， 
+    // 最后我们想解决的问题就得到了解决
+
+
+    // 递归从字面上也可以很好的理解  ， “递” 和 “归”
+    // “递”就是可以理解为去的意思  
+    // “归”就是回来的意思嘛，那么归来就必须要有出口    ，所以我们就得给他定义一个出口  ， 
+    // 有去有回
+
+
+
+
+</script>
+
+</html>
